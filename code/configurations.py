@@ -2,9 +2,9 @@
 class NetworkConfig:
     def __init__(self, train=0, test=0, statistics=0, network_type=0):
 
-        self.images_path = r"/root/images"
-        self.models_path = r"/root/models"
-        self.logs_path = r"/root/logs"
+        self.images_path = r"/content/images"
+        self.models_path = r"/content/models"
+        self.logs_path = r"/content/logs"
 
         # models
         self.BASIC = 0
