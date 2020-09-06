@@ -51,7 +51,7 @@ class TrainConfig(NetworkConfig):
         self.cropped_train_images_ir = self.images_path + r"/cropped_images/ir"
         self.masked_pure = self.images_path + r"/train/masked_pure"
         self.masked_noisy = self.images_path + r"/train/masked_noisy"
-        self.cropped_train_images_pure = self.images_path + r"./cropped_images/pure"
+        self.cropped_train_images_pure = self.images_path + r"/cropped_images/pure"
         self.cropped_train_images_noisy = self.images_path + r"/cropped_images/noisy"
 
 
