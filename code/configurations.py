@@ -2,9 +2,9 @@
 class NetworkConfig:
     def __init__(self, train=0, test=0, statistics=0, network_type=0):
 
-        self.images_path = r"C:\Users\user\Documents\ML\images"
-        self.models_path = r"C:\Users\user\Documents\ML\models"
-        self.logs_path = r"C:\Users\user\Documents\ML\logs"
+        self.images_path = r"/root/images"
+        self.models_path = r"/root/models"
+        self.logs_path = r"/root/logs"
 
         # models
         self.BASIC = 0
@@ -40,19 +40,19 @@ class TrainConfig(NetworkConfig):
         self.origin_files_index_size_path_noisy = {}
         self.origin_files_index_size_path_ir = {}
 
-        self.load_model_name = self.models_path + r"\DEPTH_20200903-132536.model"
+        self.load_model_name = self.models_path + r"/DEPTH_20200903-132536.model"
         self.LOAD_TRAINED_MODEL = 1 and self.TRAIN_DATA
 
-        self.imgdir_pure = self.images_path + r"\train\pure"
-        self.imgdir_noisy = self.images_path + r"\train\noisy"
-        self.imgdir_ir = self.images_path + r"\train\ir"
-        self.savedir_pure = self.images_path + r"\cropped_images\pure"
-        self.savedir_noisy = self.images_path + r"\cropped_images\noisy"
-        self.cropped_train_images_ir = self.images_path + r"\cropped_images\ir"
-        self.masked_pure = self.images_path + r"\train\masked_pure"
-        self.masked_noisy = self.images_path + r"\train\masked_noisy"
-        self.cropped_train_images_pure = self.images_path + r".\cropped_images\pure"
-        self.cropped_train_images_noisy = self.images_path + r"\cropped_images\noisy"
+        self.imgdir_pure = self.images_path + r"/train/pure"
+        self.imgdir_noisy = self.images_path + r"/train/noisy"
+        self.imgdir_ir = self.images_path + r"/train/ir"
+        self.savedir_pure = self.images_path + r"/cropped_images/pure"
+        self.savedir_noisy = self.images_path + r"/cropped_images/noisy"
+        self.cropped_train_images_ir = self.images_path + r"/cropped_images/ir"
+        self.masked_pure = self.images_path + r"/train/masked_pure"
+        self.masked_noisy = self.images_path + r"/train/masked_noisy"
+        self.cropped_train_images_pure = self.images_path + r"./cropped_images/pure"
+        self.cropped_train_images_noisy = self.images_path + r"/cropped_images/noisy"
 
 
 
